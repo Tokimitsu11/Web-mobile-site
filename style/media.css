@@ -1,0 +1,60 @@
+/* Задание: на экране меньше 480px(511px), сделать ширину .header-wrapper равной 80% */
+@media (max-width: 900px) { /* что стили применятся, когда экран становится меньше 480px */
+    .header-wrapper {
+        width: 80%;
+    }
+    .header-icon:not(:last-child) { /* выбор всех элементов, кроме последнего */ 
+        margin-right: 20px;
+    }
+    .intro-nav {
+        flex-wrap: wrap;
+       
+    }
+    .intro-img {
+        display: none;
+    }
+    .intro-info {
+        text-align: left;
+        justify-content: center;
+    }
+    .intro-text {
+        width: 100%;
+    }
+    .nav-link:last-child {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+/* Offers section */
+.offers-wrapper {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+.offer-items-wrapper {
+    width: 80%;
+    margin-top: 30px;
+}
+.offer-item {
+    margin: 0;
+}
+.offer-img {
+    width: 100%;
+}
+.oi {
+    width: 100%;
+}
+
+.last-socials{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.header-icons-last {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 95px;
+}
+}
